@@ -1,0 +1,24 @@
+
+
+<div class="row row-cols-1 row-cols-md-3">
+
+<div class="col mb-4">
+
+<% @books.each do |book| %>
+
+  <div class="card h-100">
+
+    <%= image_tag task.picture, class: "card-img-top" %>
+
+    <div class="card-body">
+
+      <h5 class="card-title"><%= task.name %></h5>
+
+      <%= link_to 'Completar', task_path(task), class:"btn btn-primary" %>
+
+    </div>
+
+  </div>
+
+</div>
+
